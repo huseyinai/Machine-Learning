@@ -77,41 +77,6 @@ Support Vector Machine is a classification method that finds the hyperplane that
 
 - **Real-life example**: Face detection, text and hypertext categorization, classification of images, bioinformatics.
 
-Decision Tree:
-
-Information Gain (IG): ( IG(D_p,f) = H(D_p) - \sum_{j=1}^{m} \frac{N_j}{N_p} H(D_j) )
-Where ( H(D) ) is the entropy of dataset ( D ), ( D_p ) and ( D_j ) are the datasets of the parent and the j-th child node, ( N_p ) and ( N_j ) are the number of samples in the parent and j-th child node respectively.
-Gradient Boosting Machines (GBM):
-
-General Boosting Method: ( F_m(x) = F_{m-1}(x) + \gamma_m h_m(x) )
-Where ( F_m(x) ) is the boosted model at iteration ( m ), ( \gamma_m ) is the step size, and ( h_m(x) ) is the weak learner's contribution at iteration ( m ).
-Models are added that correct the residuals of the existing model.
-Often combined with decision trees as weak learners.
-K-Means Clustering:
-
-Objective Function: ( \displaystyle\min_{S} \sum_{i=1}^{k} \sum_{x \in S_i} ||x - \mu_i||^2 )
-Where ( k ) is the number of clusters, ( S ) represents the set of all clusters, ( S_i ) is the i-th cluster, ( x ) is an observation, and ( \mu_i ) is the centroid of cluster ( S_i ).
-K-Nearest Neighbors (KNN):
-
-Classification Rule: Assign the output label based on the majority label among the ( k ) nearest neighbors.
-Distance Metrics: Typically Euclidean ( d(x, y) = \sqrt{\sum (x_i - y_i)^2} ), but can be Manhattan, Minkowski, etc.
-Linear Regression:
-
-Linear Model: ( \hat{y} = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \ldots + \beta_p x_p )
-Where ( \hat{y} ) is the predicted value, ( \beta_0 ) is the intercept, ( \beta_1, \beta_2, \ldots, \beta_p ) are the coefficients of predictor variables ( x_1, x_2, \ldots, x_p ).
-Naive Bayes:
-
-Bayes' Theorem: ( P(C_k|x) = \frac{P(C_k) P(x|C_k)}{P(x)} )
-Where ( P(C_k|x) ) is the posterior probability of class ( C_k ) given features ( x ), ( P(C_k) ) is the prior probability of class ( C_k ), ( P(x|C_k) ) are the likelihoods of features ( x ) given class ( C_k ).
-Random Forest:
-
-Ensemble of Decision Trees: Combines the output of multiple decision trees through averaging (regression) or majority voting (classification).
-Based on "bagging" (Bootstrap Aggregating): each tree is trained on a bootstrap sample of the data, and splitting features are randomly selected.
-Support Vector Machine (SVM):
-
-Optimization Objective: ( \displaystyle\min_{\mathbf{w}, b} \frac{1}{2} ||\mathbf{w}||^2 + C \sum_{i=1}^{n} \xi_i )
-Subject to ( y_i(\mathbf{w} \cdot \mathbf{x}_i + b) \geq 1 - \xi_i ) and ( \xi_i \geq 0)
-Where ( \mathbf{w} ) defines the margin width, ( b ) is the bias term, ( C ) is the penalty term for misclassification, ( \xi_i ) are the slack variables allowing soft-margin, ( y_i ) and ( \mathbf{x}_i ) are the labels and features of instances.
 
 ## Installation and Usage
 To run the notebooks, please follow these steps:
